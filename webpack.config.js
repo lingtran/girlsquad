@@ -1,15 +1,21 @@
-var webpack = require('webpack');
-var path = require('path');
-
-var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-var APP_DIR = path.resolve(__dirname, 'src/client/app');
-
 var config = {
-  entry: APP_DIR + '/index.jsx',
+  entry: {
+    main: ['babel-polyfill', './lib/index.js'],
+    test: ['babel-polyfill', 'mocha!./test/index.js'],
+  },
   output: {
-    path: BUILD_DIR,
+    path: './public',
     filename: 'bundle.js'
-  }
+  },
+  module: {
+    loaders: [
+      { test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader'] },
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
+    ],
+  },
+  resolve: {
+    extensions: ['', '.js', '.json', '.scss', '.css'],
+  },
 };
 
 module.exports = config;

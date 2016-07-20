@@ -5,7 +5,7 @@ var config = {
   },
   output: {
     path: './public',
-    filename: 'bundle.js'
+    filename: '[name].bundle.js'
   },
   module: {
     loaders: [
@@ -14,7 +14,7 @@ var config = {
     ],
   },
   resolve: {
-    extensions: ['', '.js', '.json', '.scss', '.css'],
+    extensions: ['', '.js', '.jsx', '.json', '.scss', '.css'],
   },
 };
 

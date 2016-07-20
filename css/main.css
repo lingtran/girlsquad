@@ -1,0 +1,28 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+button.ActionButton {
+  background: #FF81FF;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 5%;
+  border-radius: 20% / 80%;
+  border-style: none;
+}
+
+div.Welcome {
+  float: left;
+  position: relative;
+  align-self: center;
+  padding-left: 25%;
+  /*margin: 35%;*/
+}
+
+div.NavBar {
+  display: block;
+  height: 50px;
+  background-color: #FF81FF;
+  color: white;
+  text-align: center;
+}

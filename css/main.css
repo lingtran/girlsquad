@@ -36,6 +36,7 @@ div.UserHomeNavigation{
   position: sticky;
   flex-direction: column;
   align-items: flex-end;
+  background-color: #FF81FF;
 }
 
 /*shared*/
@@ -72,4 +73,9 @@ div.grid{
 
 .col-4{
   width: 66.66%;
+}
+
+/*icon buttons*/
+.material-icons {
+  color: white;
 }

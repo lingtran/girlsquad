@@ -1,5 +1,5 @@
 /*navigation*/
-div.NavBar {
+nav.NavBar {
   display: block;
   height: 50px;
   width: 100%;
@@ -27,7 +27,7 @@ div.Welcome {
 }
 
 /*user homescreen*/
-div.UpcomingEvents{
+section.UpcomingEvents{
   border: 2px solid;
 }
 

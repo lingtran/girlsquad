@@ -1,0 +1,81 @@
+/*navigation*/
+nav.NavBar {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: #FF81FF;
+  color: white;
+  text-align: center;
+  position: fixed;
+}
+
+/*body*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*welcome page*/
+div.Welcome {
+  float: left;
+  position: relative;
+  align-self: center;
+  padding: 25%;
+}
+
+#login-button #signup-button {
+  margin: 5%;
+}
+
+/*user homescreen*/
+section.UpcomingEvents{
+  border: 2px solid;
+}
+
+div.UserHomeNavigation{
+  border: 2px solid;
+  position: sticky;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #FF81FF;
+}
+
+/*shared*/
+button.ActionButton {
+  background: #FF81FF;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20% / 80%;
+  border-style: none;
+}
+
+/*grid system*/
+div.grid{
+  width : 100%;
+  max-width : 1200px;
+}
+
+.row:before,
+.row:after {
+   content:"";
+     display: table ;
+   clear:both;
+ }
+
+[class*='col-'] {
+  float: left;
+  width: 50%;
+  padding: 5%
+}
+
+.col-5 {
+  width: 83.33%;
+}
+
+.col-4{
+  width: 66.66%;
+}
+
+/*icon buttons*/
+.material-icons {
+  color: white;
+}
